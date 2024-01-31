@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự Án - Bảng Chức Năng và Tiến Độ</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        overflow-x: hidden;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        margin-bottom: 20px;
+        margin-left: 15px;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px 15px;
+      }
+
+      th {
+        background-color: #80808042;
+        text-transform: uppercase;
+      }
+
+      td {
+        transition: all 0.3s ease;
+      }
+
+      .stage {
+        font-weight: bold;
+        background-color: #80808042;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+      header {
+        background-color: #80808042;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      header img {
+        max-width: 100px;
+        height: auto;
+      }
+      footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      footer p.info {
+        font-style: italic;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Logo-Rikkei.png"
+        alt="logo"
+      />
+    </header>
+    <h1>Bảng báo giá dịch vụ</h1>
+    <table>
+      <tr>
+        <th>Giai đoạn</th>
+        <th>Tên chức năng</th>
+        <th>Thời gian dự kiến</th>
+        <th>Giá tiền</th>
+      </tr>
+
+      <!-- Giai đoạn 1: Khám phá -->
+      <tbody>
+        <tr>
+          <td rowspan="2" class="stage">Giai đoạn 1: Khám phá</td>
+          <td>
+            - Thu thập thông tin, nắm sơ bộ trang web (gặp mặt hoặc google meet
+            trao đổi) . <br />- Trao đổi, thống nhất giải pháp với dev và
+            design.<br />- Phân tích nhu cầu dự án. <br />
+            - Ý tưởng, định hướng thiết kế.
+          </td>
+          <td class="estimated-time"></td>
+          <td rowspan="3" style="font-weight: bold">10 triệu</td>
+        </tr>
+        <tr></tr>
+
+        <!-- Giai đoạn 2: Thiết kế giao diện -->
+        <tr>
+          <td rowspan="3" class="stage">Giai đoạn 2: Thiết kế giao diện</td>
+          <td>
+            - Thiết kế sơ bộ UI / UX <br />- Chỉnh sửa giao diện theo yêu cầu và
+            hoàn thiện UI / UX<br />- Hợp đồng triển khai
+          </td>
+
+          <td></td>
+        </tr>
+        <tr></tr>
+
+        <!-- Giai đoạn 3: Lập trình -->
+        <tr></tr>
+        <tr></tr>
+
+        <!-- Giai đoạn 3: Lập trình -->
+        <td rowspan="20" class="stage">Giai đoạn 3: Lập trình</td>
+        <tr>
+          <td>Code màn hình đăng nhập (+ responsive)</td>
+          <td>1 ngày</td>
+          <td rowspan="19" style="font-weight: bold">11 triệu</td>
+        </tr>
+        <tr>
+          <td>Code màn hình đăng ký + quên mật khẩu (+ responsive)</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Code màn Dashboard + đối tượng (+ responsive)</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Code Trang nhập data bệnh nhân (+ responsive)</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Code Trang quản lý + xuất data (+ responsive)</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Code Trang account users (+ responsive)</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Setup dự án bằng React (api, form, components, function)</td>
+          <td>2 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Thiết kế cơ sở dữ liệu (MySQL)</td>
+          <td>2 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Setup dự án Java Spring</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Code API Login, logout, quên mật khẩu</td>
+          <td>2 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Code API Dashboard + đối tượng</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Code API Trang nhập data bệnh nhân</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Code API Trang quản lý + xuất data</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Code API Trang quản lý account users</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ghép luồng đăng nhập, đăng ký, quên mật khẩu</td>
+          <td>2 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            Ghép luồng Dashboard + đối tượng + Ghép luồng Trang nhập data bệnh
+            nhân
+          </td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ghép luồng Trang quản lý + xuất data</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ghép luồng Trang quản lý account users</td>
+          <td>1 ngày</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Deloy dự án (cấu hình domain + thuê tên miền)</td>
+          <td>2 ngày</td>
+          <td></td>
+        </tr>
+
+        <!-- Giai đoạn 4: Vận hành -->
+        <tr>
+          <td rowspan="3" class="stage">Giai đoạn 4: Vận hành</td>
+          <td>Vận hành thử nghiệm 1 tuần</td>
+          <td></td>
+          <td rowspan="3">Thỏa thuận</td>
+        </tr>
+
+        <tr>
+          <td>Bàn giao - Hướng dẫn sử dụng</td>
+          <td>2 ngày</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Chuyển giao website</td>
+          <td>2 ngày</td>
+          <td></td>
+        </tr>
+
+        <!-- Giai đoạn 5: Bảo hành - sử dụng -->
+        <tr>
+          <td rowspan="2" class="stage">Giai đoạn 5: Bảo hành - sử dụng</td>
+          <td>Bảo hành 12 tháng</td>
+          <td></td>
+          <td>Xử lý sự cố trong 24h</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Xử lý sự cố trong 24h</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <p>&copy; 2024 Rikkei Academy. Tất cả các quyền được bảo lưu.</p>
+
+      <p class="info">
+        Địa chỉ: 77 Lê Trung Nghĩa, phường 12, quận Tân Bình, thành phố Hồ Chí
+        Minh
+      </p>
+      <p class="info">Email: tranduy10a@gmail.com</p>
+    </footer>
+  </body>
+</html>
